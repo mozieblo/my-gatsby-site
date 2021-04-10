@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import Layout from '../components/Layout';
 
 const Contact = () => {
   return (
-    <div>
+    <Layout>
       <p>Contact page</p>
-      <Link to="/">Home</Link>
-    </div>
+    </Layout>
   );
 };
 
