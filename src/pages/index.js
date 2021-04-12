@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
+import FetchData from '../examples/fetchData';
 // import Images from '../examples/Images';
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
           </div>
         </header>
       </main>
+      <FetchData />
       {/*<Images />*/}
     </Layout>
   );
