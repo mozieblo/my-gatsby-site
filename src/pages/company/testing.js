@@ -6,8 +6,10 @@ const Testing = ({ data }) => {
   console.log('props.data: ', data);
   return (
     <Layout>
-      <h1>TESTING</h1>
-      <h6>{data.site.info.title}</h6>
+      <main className="page">
+        <h1>TESTING</h1>
+        <h6>{data.site.info.title}</h6>
+      </main>
     </Layout>
   );
 };
