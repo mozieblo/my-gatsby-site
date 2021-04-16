@@ -2,6 +2,7 @@ import React from 'react';
 import RecipesList from './RecipesList';
 import TagsList from './TagsList';
 import { useStaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 
 const query = graphql`
   {
@@ -39,11 +40,17 @@ const AllRecipes = () => {
   console.log('DATA RECIPES: ', nodes);
 
   return (
-    <>
-      <RecipesList />
+    <Wrapper>
+      <RecipesList recipes={nodes} />
       <TagsList tags={tags} />
-    </>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.section`
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+`;
 
 export default AllRecipes;

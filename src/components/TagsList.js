@@ -23,7 +23,7 @@ const TagsList = ({ tags }) => {
     <div>
       <h3>Recipes:</h3>
       {uniqueTags.map((tag, index) => {
-        let duplicateNumber = 0;
+        let duplicateNumber = 1;
         duplicates.forEach(duplicate => {
           if (tag === duplicate) {
             duplicateNumber++;
@@ -31,7 +31,7 @@ const TagsList = ({ tags }) => {
         });
         return (
           <p key={index}>
-            <Link to="/" className="tags">
+            <Link to={`/${tag}`} className="tags">
               {tag} <span>({duplicateNumber})</span>
             </Link>
           </p>
