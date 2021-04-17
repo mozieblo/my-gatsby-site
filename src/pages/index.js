@@ -18,14 +18,8 @@ export default function Home() {
             placeholder="tracedSVG"
             className="hero-img"
           />
-          <div className="hero-container">
-            <div className="hero-text">
-              <h1>simply site with recipes</h1>
-              <h4>oh yeah it's cool</h4>
-            </div>
-          </div>
         </header>
-        <FetchData />
+        {/*<FetchData />*/}
         <AllRecipes />
       </main>
       {/*<Images />*/}

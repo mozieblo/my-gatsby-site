@@ -37,8 +37,6 @@ const AllRecipes = () => {
     return el.content.tags;
   });
 
-  console.log('DATA RECIPES: ', nodes);
-
   return (
     <Wrapper>
       <RecipesList recipes={nodes} />

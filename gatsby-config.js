@@ -14,11 +14,11 @@ module.exports = {
     title: 'My simple Gatsby site',
     description: 'Nice and first Gatsby site',
     author: 'Magdalena Oziębło',
-    person: { name: 'Magda', age: 23 },
+    person: { name: 'Henry', age: 30 },
     simpleData: ['item 1', 'item 2'],
     complexData: [
-      { name: 'Magda', age: 23 },
-      { name: 'Olaf', age: 33 },
+      { name: 'Miś Yogi', age: 123 },
+      { name: 'Kotlet schabowy', age: 400 },
     ],
   },
   plugins: [

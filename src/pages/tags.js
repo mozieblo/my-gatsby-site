@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
+import slugify from 'slugify';
 
 const Tags = ({
   data: {
@@ -32,8 +33,10 @@ const Tags = ({
         <section className="tags-page">
           {tagsInOrder.map((tag, index) => {
             const [food, number] = tag;
+            const slug = slugify(food, { lower: true });
+            console.log('SLUG', slug);
             return (
-              <Link to={`/${food}`} key={index} className="tag">
+              <Link to={`/tags/${slug}`} key={index} className="tag">
                 <h5>{food}</h5>
                 <p>{number} recipe</p>
               </Link>

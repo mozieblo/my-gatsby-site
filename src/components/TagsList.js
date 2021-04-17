@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import slugify from 'slugify';
 
 const TagsList = ({ tags }) => {
   const oneTagsList = [];
@@ -29,9 +30,11 @@ const TagsList = ({ tags }) => {
             duplicateNumber++;
           }
         });
+
+        const slug = slugify(tag, { lower: true });
         return (
           <p key={index}>
-            <Link to={`/${tag}`} className="tags">
+            <Link to={`/tags/${slug}`} className="tags">
               {tag} <span>({duplicateNumber})</span>
             </Link>
           </p>
