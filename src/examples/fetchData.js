@@ -26,7 +26,7 @@ const FetchData = () => {
   const {
     site: { info },
   } = useStaticQuery(getData);
-  console.log('DATA', info);
+
   // return <pre>{JSON.stringify(data, null, 4)}</pre>
   return (
     <div>

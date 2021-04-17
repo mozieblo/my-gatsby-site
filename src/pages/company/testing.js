@@ -3,7 +3,6 @@ import Layout from '../../components/Layout';
 import { graphql } from 'gatsby';
 
 const Testing = ({ data }) => {
-  console.log('props.data: ', data);
   return (
     <Layout>
       <main className="page">

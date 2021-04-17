@@ -7,7 +7,6 @@ const Tags = ({
     allContentfulRecipe: { nodes: tags },
   },
 }) => {
-  console.log('TAGS: ', tags);
   const newTags = {};
 
   tags.forEach(content => {
@@ -26,9 +25,6 @@ const Tags = ({
 
     return firstTag.localeCompare(secondTag);
   });
-
-  console.log(newTags);
-  console.log(tagsInOrder);
 
   return (
     <Layout>
