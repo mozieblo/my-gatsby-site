@@ -1,9 +1,10 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { BsClockHistory, BsClock, BsPeople } from 'react-icons/Bs';
+import { BsClockHistory, BsClock, BsPeople } from 'react-icons/bs';
 import Layout from '../components/Layout';
 import slugify from 'slugify';
+import SEO from '../components/SEO';
 
 const RecipeTemplate = props => {
   const {
@@ -18,6 +19,7 @@ const RecipeTemplate = props => {
 
   return (
     <Layout>
+      <SEO title={title} description={`this is ${title} page`} />
       <main className="page">
         <div className="recipe-page">
           <section className="recipe-hero">

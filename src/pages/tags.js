@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
 import slugify from 'slugify';
+import SEO from '../components/SEO';
 
 const Tags = ({
   data: {
@@ -29,6 +30,7 @@ const Tags = ({
 
   return (
     <Layout>
+      <SEO title="Tags" />
       <main className="page">
         <section className="tags-page">
           {tagsInOrder.map((tag, index) => {
